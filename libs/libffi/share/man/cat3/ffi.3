@@ -1,0 +1,31 @@
+FFI(3)                   BSD Library Functions Manual                   FFI(3)
+
+NNAAMMEE
+     FFFFII -- Foreign Function Interface
+
+LLIIBBRRAARRYY
+     libffi, -lffi
+
+SSYYNNOOPPSSIISS
+     ##iinncclluuddee <<ffffii..hh>>
+
+     _f_f_i___s_t_a_t_u_s
+     ffffii__pprreepp__cciiff(_f_f_i___c_i_f _*_c_i_f, _f_f_i___a_b_i _a_b_i, _u_n_s_i_g_n_e_d _i_n_t _n_a_r_g_s,
+         _f_f_i___t_y_p_e _*_r_t_y_p_e, _f_f_i___t_y_p_e _*_*_a_t_y_p_e_s);
+
+     _v_o_i_d
+     ffffii__pprreepp__cciiff__vvaarr(_f_f_i___c_i_f _*_c_i_f, _f_f_i___a_b_i _a_b_i, _u_n_s_i_g_n_e_d _i_n_t _n_f_i_x_e_d_a_r_g_s,
+         _u_n_s_i_g_n_e_d _i_n_t _n_t_o_t_a_l_a_r_g_s, _f_f_i___t_y_p_e _*_r_t_y_p_e, _f_f_i___t_y_p_e _*_*_a_t_y_p_e_s);
+
+     _v_o_i_d
+     ffffii__ccaallll(_f_f_i___c_i_f _*_c_i_f, _v_o_i_d _(_*_f_n_)_(_v_o_i_d_), _v_o_i_d _*_r_v_a_l_u_e, _v_o_i_d _*_*_a_v_a_l_u_e);
+
+DDEESSCCRRIIPPTTIIOONN
+     The foreign function interface provides a mechanism by which a function
+     can generate a call to another function at runtime without requiring
+     knowledge of the called function's interface at compile time.
+
+SSEEEE AALLSSOO
+     ffi_prep_cif(3), ffi_prep_cif_var(3), ffi_call(3)
+
+                               February 15, 2008
